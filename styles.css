@@ -1,5 +1,12 @@
 @import 'normalize.css';
 
+:root {
+  --main-white: #f0f0f0;
+  --main-black: #303841;
+  --main-text-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.75);
+  --main-box-shadow: 2.5rem 2.5rem 1.25rem 0rem rgba(0, 0, 0, 0.75);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -66,8 +73,8 @@ body {
 .sidebar .sidebar-wrapper h1 {
   font-size: 3rem;
   margin: 1.6rem 0 0 4rem;
-  color: #f0f0f0;
-  text-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.75);
+  color: var(--main-white);
+  text-shadow: var(--main-text-shadow);
 }
 
 ul {
@@ -79,7 +86,7 @@ li {
   margin: 1.6rem auto;
   font-size: 2rem;
   text-align: justify;
-  text-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.75);
+  text-shadow: var(--main-text-shadow);
   transition: transform 0.3s ease-out;
 }
 
@@ -89,7 +96,7 @@ li:hover {
 
 a.nav-links {
   text-decoration: none;
-  color: #f0f0f0;
+  color: var(--main-white);
 }
 
 .header {
@@ -132,19 +139,19 @@ a.nav-links {
 
 .search-bar .fa-solid {
   font-size: 2.2rem;
-  color: #f0f0f0;
-  text-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.75);
+  color: var(--main-white);
+  text-shadow: var(--main-text-shadow);
 }
 
 input {
   width: 40vw;
   height: 2.5rem;
   font-size: 2rem;
-  background: #f0f0f0;
+  background: var(--main-white);
   border: 0.25rem solid rgba(0, 0, 0, 0.75);
   border-radius: 1.5rem;
   outline: none;
-  box-shadow: 2.5rem 2.5rem 1.25rem 0rem rgba(0, 0, 0, 0.75);
+  box-shadow: var(--main-box-shadow);
 }
 
 .user-info {
@@ -158,19 +165,14 @@ input {
 }
 
 .user-nav {
-  color: #f0f0f0;
-  text-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.75);
+  color: var(--main-white);
+  text-shadow: var(--main-text-shadow);
   text-decoration: none;
   transition: transform 0.3s ease-out;
 }
 
 .user-nav:hover {
   transform: translateY(1rem);
-}
-
-.white {
-  filter: invert(90%) sepia(0%) saturate(0%) hue-rotate(238deg) brightness(112%)
-    contrast(102%);
 }
 
 .header-second-line {
@@ -188,8 +190,8 @@ input {
   display: flex;
   flex-direction: row;
   font-size: 3.2rem;
-  color: #f0f0f0;
-  text-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.75);
+  color: var(--main-white);
+  text-shadow: var(--main-text-shadow);
 }
 
 .main-icon .fa-hat-cowboy {
@@ -204,16 +206,16 @@ h1 {
   font-size: 2.4rem;
   margin-top: 0;
   margin-left: 1.6rem;
-  color: #f0f0f0;
-  text-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.75);
+  color: var(--main-white);
+  text-shadow: var(--main-text-shadow);
 }
 
 h3 {
   font-size: 2rem;
   margin-bottom: 0;
   margin-left: 1.6rem;
-  color: #f0f0f0;
-  text-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.75);
+  color: var(--main-white);
+  text-shadow: var(--main-text-shadow);
 }
 
 .buttons {
@@ -229,12 +231,12 @@ button {
   font-size: 2rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
-  color: #f0f0f0;
-  text-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.75);
+  color: var(--main-white);
+  text-shadow: var(--main-text-shadow);
   background-color: #1d2671;
   border-radius: 2.5rem;
   cursor: pointer;
-  box-shadow: 2.5rem 2.5rem 1.25rem 0rem rgba(0, 0, 0, 0.75);
+  box-shadow: var(--main-box-shadow);
 }
 
 .glow-on-hover {
@@ -275,8 +277,8 @@ button {
 }
 
 .glow-on-hover:active {
-  color: #303841;
-  text-shadow: 0.5rem 0.5rem 0.25rem #f0f0f0;
+  color: var(--main-black);
+  text-shadow: 0.5rem 0.5rem 0.25rem var(--main-white);
 }
 
 .glow-on-hover:active:after {
@@ -337,12 +339,12 @@ button {
 }
 
 .projects .project-card {
-  background-color: #f0f0f0;
+  background-color: var(--main-white);
   text-align: center;
   padding: 1.6rem;
   border: 0.25rem solid rgba(0, 0, 0, 0.75);
   border-radius: 0.6rem;
-  box-shadow: 2.5rem 2.5rem 1.25rem 0rem rgba(0, 0, 0, 0.75);
+  box-shadow: var(--main-box-shadow);
 }
 
 .projects .project-card {
@@ -370,7 +372,7 @@ button {
 .project-card p,
 .trending-card p,
 .announcements-card p {
-  color: #303841;
+  color: var(--main-black);
   font-weight: normal;
   font-size: 1.5rem;
   margin: 0;
@@ -385,8 +387,8 @@ button {
 h2 {
   font-size: 2.2rem;
   margin: 0 1.6rem;
-  color: #f0f0f0;
-  text-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.75);
+  color: var(--main-white);
+  text-shadow: var(--main-text-shadow);
 }
 
 .announcements-trending {
@@ -401,12 +403,12 @@ h2 {
 
 .announcements-card,
 .trending-card {
-  background-color: #f0f0f0;
+  background-color: var(--main-white);
   padding: 1.6rem;
   margin: 0 1.6rem;
   border: 0.25rem solid rgba(0, 0, 0, 0.75);
   border-radius: 0.6rem;
-  box-shadow: 2.5rem 2.5rem 1.25rem 0rem rgba(0, 0, 0, 0.75);
+  box-shadow: var(--main-box-shadow);
 }
 
 .announcements-card,
@@ -437,8 +439,8 @@ h2 {
 }
 
 .svg-user-icons {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 4rem;
+  height: 4rem;
   border: 0.25rem solid red;
   border-radius: 50%;
   filter: invert(20%) sepia(96%) saturate(7435%) hue-rotate(343deg)
@@ -452,20 +454,20 @@ h2 {
   font-size: 1.5rem;
   margin: 2.4rem auto;
   text-align: center;
-  color: #f0f0f0;
-  text-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.75);
+  color: var(--main-white);
+  text-shadow: var(--main-text-shadow);
 }
 
 #footer a {
   text-decoration: none;
-  color: #f0f0f0;
-  text-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.75);
+  color: var(--main-white);
+  text-shadow: var(--main-text-shadow);
 }
 
 #footer a:hover {
   text-decoration: underline;
-  color: #f0f0f0;
-  text-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.75);
+  color: var(--main-white);
+  text-shadow: var(--main-text-shadow);
 }
 
 #icon {
