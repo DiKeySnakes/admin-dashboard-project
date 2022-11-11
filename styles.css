@@ -1,5 +1,9 @@
 @import 'normalize.css';
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background: #c33764; /* fallback for old browsers */
@@ -51,6 +55,7 @@ body {
 }
 
 .fa-ubuntu {
+  font-size: 3rem;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -59,26 +64,27 @@ body {
 }
 
 .sidebar .sidebar-wrapper h1 {
-  margin: 1rem 0 0 2.5rem;
+  font-size: 3rem;
+  margin: 1.6rem 0 0 4rem;
   color: #f0f0f0;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.75);
 }
 
 ul {
-  margin: 3rem auto;
+  margin: 4.8rem auto;
 }
 
 li {
   list-style-type: none;
-  margin: 1rem auto;
-  font-size: 1.5rem;
+  margin: 1.6rem auto;
+  font-size: 2rem;
   text-align: justify;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.75);
   transition: transform 0.3s ease-out;
 }
 
 li:hover {
-  transform: translateY(8px);
+  transform: translateY(0.5rem);
 }
 
 a.nav-links {
@@ -112,36 +118,41 @@ a.nav-links {
 .search-bar {
   display: flex;
   flex-direction: row;
-  margin-top: 1rem;
+  margin-top: 2.4rem;
 }
 
 #magnifying-glass {
-  padding-top: 0.2rem;
+  padding-top: 0.4rem;
   transition: transform 0.3s ease-out;
 }
 
 #magnifying-glass:hover {
-  transform: translateY(8px);
+  transform: translateY(0.5rem);
 }
 
 .search-bar .fa-solid {
+  font-size: 2.2rem;
   color: #f0f0f0;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.75);
 }
 
 input {
   width: 40vw;
+  height: 2.5rem;
+  font-size: 2rem;
   background: #f0f0f0;
   border: 1px solid rgba(0, 0, 0, 0.75);
-  border-radius: 8px;
+  border-radius: 1.5rem;
 }
 
 .user-info {
   width: 25vw;
+  font-size: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 1.5rem;
+  align-items: center;
+  margin-top: 2.8rem;
 }
 
 .user-nav {
@@ -152,7 +163,7 @@ input {
 }
 
 .user-nav:hover {
-  transform: translateY(8px);
+  transform: translateY(0.5rem);
 }
 
 .white {
@@ -174,7 +185,7 @@ input {
 .main-icon {
   display: flex;
   flex-direction: row;
-  font-size: 2rem;
+  font-size: 3.2rem;
   color: #f0f0f0;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.75);
 }
@@ -188,15 +199,17 @@ input {
 }
 
 h1 {
+  font-size: 2.4rem;
   margin-top: 0;
-  margin-left: 1rem;
+  margin-left: 1.6rem;
   color: #f0f0f0;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.75);
 }
 
 h3 {
+  font-size: 2rem;
   margin-bottom: 0;
-  margin-left: 1rem;
+  margin-left: 1.6rem;
   color: #f0f0f0;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.75);
 }
@@ -209,22 +222,22 @@ h3 {
 }
 
 button {
-  width: 8rem;
-  height: 3rem;
-  font-size: 1.5rem;
+  width: 12rem;
+  height: 4rem;
+  font-size: 2rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   color: #f0f0f0;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.75);
   background-color: #1d2671;
-  border-radius: 1.5rem;
+  border-radius: 2.5rem;
   cursor: pointer;
 }
 
 .main-content {
   display: flex;
   flex-direction: row;
-  padding: 1rem 1rem;
+  padding: 1.6rem 1.6rem;
 }
 
 .projects-wrapper {
@@ -234,14 +247,14 @@ button {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 1rem;
-  margin-left: 1rem;
-  border-radius: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 1.6rem;
+  margin-left: 1.6rem;
+  border-radius: 0.6rem;
 }
 
 .projects p {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-family: 'Poppins', sans-serif;
   text-align: left;
 }
@@ -249,9 +262,9 @@ button {
 .projects .project-card {
   background-color: #f0f0f0;
   text-align: center;
-  padding: 1rem;
+  padding: 1.6rem;
   border: 1px solid rgba(0, 0, 0, 0.75);
-  border-radius: 10px;
+  border-radius: 0.6rem;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -264,8 +277,8 @@ button {
 }
 
 .svg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.4rem;
+  height: 2.4rem;
   filter: invert(20%) sepia(96%) saturate(7435%) hue-rotate(343deg)
     brightness(104%) contrast(109%);
 }
@@ -274,7 +287,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-top: 1rem;
+  margin-top: 1.6rem;
 }
 
 .project-card p,
@@ -282,18 +295,19 @@ button {
 .announcements-card p {
   color: #303841;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 1.5rem;
   margin: 0;
 }
 
 .project-card .title {
-  font-size: 18px;
+  font-size: 2rem;
   font-weight: 800;
   text-align: left;
 }
 
 h2 {
-  margin: 0 1rem;
+  font-size: 2.2rem;
+  margin: 0 1.6rem;
   color: #f0f0f0;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.75);
 }
@@ -305,16 +319,16 @@ h2 {
 
 .announcements h2,
 .trending h2 {
-  margin-left: 1rem;
+  margin-left: 1.6rem;
 }
 
 .announcements-card,
 .trending-card {
   background-color: #f0f0f0;
-  padding: 1rem;
-  margin: 0 1rem;
+  padding: 1.6rem;
+  margin: 0 1.6rem;
   border: 1px solid rgba(0, 0, 0, 0.75);
-  border-radius: 10px;
+  border-radius: 0.6rem;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -330,7 +344,7 @@ h2 {
 
 .trending-card .title,
 .announcements-card .title {
-  font-size: 18px;
+  font-size: 2rem;
   font-weight: 800;
   text-align: left;
 }
@@ -339,8 +353,8 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 0.8rem;
-  margin: 1.5rem auto;
+  font-size: 1.5rem;
+  margin: 2.4rem auto;
   text-align: center;
   color: #f0f0f0;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.75);
